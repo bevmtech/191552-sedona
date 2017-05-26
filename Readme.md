@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/adaptive/11/user/191552).
-* Наставник: `Неизвестно`.
+* Студент: Майдар Раднаев(https://up.htmlacademy.ru/adaptive/11/user/191552
+* Наставник: Михаил Ожерельев (https://htmlacademy.ru/profile/id29002)
 
 ---
 
