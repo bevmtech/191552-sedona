@@ -1,12 +1,128 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/index.css">
+	<title>Sedona</title>
+</head>
+<body>
+	<header class="page-header">
+		<h1 class="page-header__title">Седона, небольшой городок в Аризоне</h1> <!-- скрыт! -->
+			<nav class="main-nav">
+					<!--<span class="main-nav__toggler"><span></span></span>-->
+				<div class="main-nav__wrapper">
+					<ul class="main-nav__list">
+							<li class="btn main-nav__item  main-nav__item--active"> <a>ГЛАВНАЯ</a> </li>
+							<li class="btn main-nav__item"> <a href="">ФОТО И ВИДЕО</a> </li>
+							<li class="btn main-nav__item"> <a href="">ФОРМА ОТЗЫВА</a> </li>
+							<li class="btn main-nav__item"> <a href="">HTML ACADEMY</a> </li>
+					</ul>	
+				</div>
+			</nav>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+			<div class="page-header__logo">
+				<img src="" width="40px" height="40px" alt="CITY OF SEDONA">
+			</div>
+			
+			<div class="page-header__promo-pict">
+				<img src="" width="100%"  alt="WELCOME to the gorgeous SEDONA">
+			</div>
+	</header>
 
-  </body>
+	<main class="main-page">
+		<div class="main-page__wrapper">
+			<section class="main-page-text">
+					<div class="main-page-text-wrapper">
+						<h2 class="header-text__slogan">СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
+						<p class="header-text__features">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ ЧЕМ ГРАНД КАНЬОН!</p>
+					</div>
+			</section>
+
+			<section class="features">
+				<div class="features__wrapper">
+						<div class="features__item">
+							<h2 class="features__title">НАСТОЯЩИЙ ГОРОДОК</h2>
+							<p class="features__numbers">№1</p>
+							<p class="features__descr">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+							<div class="features__pict">
+									<img src="" width="100%"  alt="house">
+							</div>
+						</div>
+					
+						<ul class="features__list">
+							<li class="features__item features__item--housing"> <!--модификаторы чтобы разместить рисунок-->
+								<h3 class="features__item-title">ЖИЛЬЕ</h3>
+								<p class="features__item-descr">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ ОТЕЛЕ, ВСЕ КАК В КИНО!</p> 
+							</li>
+							<li class="features__item features__item--souvenirs">
+								<h3 class="features__item-title">СУВЕНИРЫ</h3>
+								<p class="reasons__item-descr">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p> 
+							</li>
+							<li class="features__item features__item--food">
+								<h3 class="features_itemtitle">ЕДА</h3>
+								<p class="reasons__item-descr">ВСЕГДА ЗАКАЗЫЙВАЙТЕ БУРГЕР, ВЫ НЕ РАЗОЧАРУЙТЕСЬ!</p> 
+							</li>
+						</ul>		
+
+					<div class="features__item">
+						<h2 class="features__title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2>
+						<p class="features__numbers">№2</p>
+						<p class="features__descr">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО</p>
+					</div>
+
+					<div class="features__pict"> 
+							<img src="" width="100%"  alt="The Devil's Bridge">
+					</div>
+
+					<div class="features__item features__item--3-4-5">
+						<h2 class="features__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+						<p class="features__numbers">№3</p>
+						<p class="features__descr">ВСЕ ИНТЕРЕСНЫЕ МЕСТА НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+					</div>
+				
+					<div class="features__item features__item--3-4-5">
+						<h2 class="features__title">КРАСИВАЯ ДОРОГА</h2>
+						<p class="features__numbers">№4</p>
+						<p class="features__descr">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+					</div>
+
+					<div class="features__item features__item--3-4-5">
+						<h2 class="features__title">МАЛО ТУРИСТОВ</h2>
+						<p class="features__numbers">№5</p>
+						<p class="features__descr">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="hotels">
+				<div class="hotels__text">
+					<h1>ЗАИНТЕРЕСОВАЛИСЬ</h1>
+					<p>УКАЖИТЕ ПРЕДПОЛОГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИННИЦ В СЕДОНЕ</p>
+					<a class="btn" href="">НАЙТИ ГОСТИННИЦЫ</a>
+				</div>
+			</section>
+
+			<section class="map">
+	            <iframe class="map__google" src="" width="1200" height="350" frameborder="0">
+	            </iframe>
+	        </section>
+	    </div>
+	</main>
+
+	<footer class="page-footer">
+		<div class="page-footer__wrapper">
+			<p class="page-footer__title">#VISITSEDONA</p>
+			<p class="page-footer__social">
+				<span class="social-links">
+					<a class="social-link social-link--tw" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+					<a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+					<a class="social-link social-link--yt" href="https://www.youtube.com/htmlacademy">Мы в Ютубе</a>
+				</span>
+			</p>
+			<p class="page-footer__copyright">
+				<a class="copyright" href="" >РАЗРАБОТАНО</a>
+			</p>
+		</div>
+	</footer>
+</body>
 </html>
