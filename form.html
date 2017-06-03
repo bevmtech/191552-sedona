@@ -38,12 +38,12 @@
 					</div>
 			</section>
 			
-			<form action="/echo" method="post" class="review">
+			<form action="https://echo.htmlacademy.ru/" method="post" class="review">
 				<div class="review__wrapper">
 					<div class="review-item">
 						<h2 class="review-item__title">ПРЕДСТАВТЕСЬ</h2>
 						<label class="input">
-							<div class="input__descr input__descr--name 	">ИМЯ</div>
+							<div class="input__descr input__descr--name">ИМЯ</div>
 							<input class="input__id input_id--name" type="text" required name="name"> <!--модификатор изменяет ширину поля-->
 						</label>
 						<label class="input">
@@ -85,9 +85,9 @@
 					</div>
 					
 					<div class="review-item">
-						<h2 class="review-item__title">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ"</h2>
+						<h2 class="review-item__title">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ</h2>
 						<label class="input">
-							<input class="input__checkbox" type="checkbox" name="devil's bridge" checked>
+							<input class="input__checkbox" type="checkbox" name="devil bridge" checked>
 							<div class="input__descr">Мост Дьявола</div>
 						</label>
 						<label class="input">
@@ -104,14 +104,15 @@
 						</label>
 					</div>
 					
-					<div class="review__item">
-						<h2 class="review__title">ОПИШИТЕ СВОИ ЭМОЦИИ</h2>
+					<div class="review-item">
+						<h2 class="review-item__title">ОПИШИТЕ СВОИ ЭМОЦИИ</h2>
 						<label class="input">
 							<textarea class="input__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
 						</label>
-						<input class="btn input__submit" type="submit" value="Отправить отзыв" name="submit">
 					</div>
-					
+					<div class="submit">
+						<input class="btn submit__btn" type="submit" value="Отправить отзыв" name="submit">
+					</div>
 				</div>
 			</form>
 		</div>
