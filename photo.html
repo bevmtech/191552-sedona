@@ -8,74 +8,102 @@
 <body>
 	<header class="page-header">
 		<h1 class="page-header__title">фотографии Седона</h1> <!-- скрыт! -->
-			<nav class="main-nav">
-					<!--<span class="main-nav__toggler"><span></span></span>-->
-				<div class="main-nav__wrapper">
-					<ul class="main-nav__list">
-							<li class="btn main-nav__item  main-nav__item--active"> <a>ГЛАВНАЯ</a> </li>
-							<li class="btn main-nav__item"> <a href="">ФОТО И ВИДЕО</a> </li>
-							<li class="btn main-nav__item"> <a href="">ФОРМА ОТЗЫВА</a> </li>
-							<li class="btn main-nav__item"> <a href="">HTML ACADEMY</a> </li>
-					</ul>	
-				</div>
-			</nav>
+		<nav class="main-nav">
+			<!--<span class="main-nav__toggler"><span></span></span>-->
+			<div class="main-nav__wrapper">
+				<ul class="main-nav__list">
+					<li class="btn main-nav__item  main-nav__item--active"> 
+						<a>главная</a> 
+					</li>
+					<li class="btn main-nav__item"> 
+						<a href="">фото и видео</a> 
+					</li>
+					<li class="btn main-nav__item"> 	
+						<a href="">форма отзыва</a> 
+					</li>
+					<li class="btn main-nav__item">
+						<a href="">html academy</a> 
+					</li>
+				</ul>	
+			</div>
+		</nav>
 
-			<div class="page-header__logo">
-				<img src="" width="40px" height="40px" alt="CITY OF SEDONA">
-			</div>
+		<div class="page-header__logo">
+			<img src="" width="40px" height="40px" alt="city of sedona">
+		</div>
 			
-			<div class="page-header__promo-pict">
-				<img src="" width="100%"  alt="WELCOME to the gorgeous SEDONA">
-			</div>
+		<div class="page-header__promo-pict">
+			<img src="" width="100%"  alt="welcome to the gorgeous sedona">
+		</div>
 	</header>
 
 	<main class="main-page">
 		<div class="main-page__wrapper">
-			<section class="description">
-					<div class="description__wrapper">
-						<h2 class="description__title">ФОТО И ВИДЕО</h2>
-						<p class="description__text">НЕ МОЖЕТЕ РЕШИТЬСЯ НА ПУТЕШЕСТВИЕ ИЗ-ЗА КУРСА? ФОТОГРАФИИ ПОМОГУТ ВАМ ЗАБЫТЬ О ПОЛИТИКЕ И ЭКОНОМИКЕ.</p>
-					</div>	
-			</section>
-			
+			<div class="description">
+				<h2 class="description__title">фото и видео</h2>
+				<p class="description__text">не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о политике и экономике.</p>
+			</div
 			
 			<div class="photo">
 				<img class="photo__img" src="" width="" alt="">
-				<h2 class="photo__title">НЕРОДНЫЕ ПРОСТОРЫ</h2>
-				<span class="photo__autor">Автор фото: Борис</span>
-				<div class="photo__likes"><span></span></div>
+				<div class="photo__descr">
+					<h2 class="photo__title">неродные просторы</h2>
+					<span class="photo__autor">Автор фото: Борис</span>
+					<div class="likes">
+						<button type="button" class="likes__btn"></button>
+						<span class="likes__number likes__number--boris">1350</span> <!--модификаторы чтобы менять числа-->
+					</div>
+				</div>
 			</div>
 				
 			<div class="photo">
 				<img class="photo__img" src="" width="" alt="">
-				<h2 class="photo__title">МЕСТНАЯ РАСТИТЕЛЬОСТЬ</h2>
-				<span class="photo__autor">Автор фото: Сергей</span>
-				<div class="photo__likes"><span></span></div>
+				<div class="photo__descr">
+					<h2 class="photo__title">местная растительость</h2>
+					<span class="photo__autor">Автор фото: Сергей</span>
+					<div class="likes">
+						<button type="button" class="likes__btn"></button>
+						<span class="likes__number likes__number--sergey">143</span>
+					</div>
+				</div>
 			</div>
 			
 			<div class="photo">
 				<img class="photo__img" src="" width="" alt="">
-				<h2 class="photo__title">ДОРОГА НА СЕВЕР</h2>
-				<span class="photo__autor">Автор фото: Петр</span>
-				<div class="photo__likes"><span></span></div>
+				<div class="photo__descr">
+					<h2 class="photo__title">дорога на север</h2>
+					<span class="photo__autor">Автор фото: Петр</span>
+					<div class="likes">
+						<button type="button" class="likes__btn"></button>
+						<span class="likes__number likes__number--petr">96</span>
+					<div>
+				</div>
 			</div>
 			
 			<div class="photo">
 				<img class="photo__img" src="" width="" alt="">
-				<h2 class="photo__title">МОСТ ДЬЯВОЛА</h2>
-				<span class="photo__autor">Автор фото: Антон</span>
-				<div class="photo__likes"><span></span></div>
+				<div class="photo__descr">
+					<h2 class="photo__title">мост дьявола</h2>
+					<span class="photo__autor">Автор фото: Антон</span>
+					<div class="likes">
+						<button type="button" class="likes__btn"></button>
+						<span class="likes__number likes__number--anton">254</span>
+					</div>
+				<div>	
 			</div>
 			
-			<div class="video description__wrapper">
-				<h2 class="description__title">ВЫ ЕЩЕ СОМНЕВАЕТЕСЬ?</h2>
-				<p class="description__text">СМОТРИТЕ ВИДЕО ПРЕЗЕНТАЦИЮ И СКОРЕЕ ЗА БИЛЕТАМИ, ПОКА ОНИ НЕ ПОДОРОЖАЛИ В ОЧЕРЕДНОЙ РАЗ!</p>
+			<div class="description">
+				<h2 class="description__title">вы еще сомневаетесь?</h2>
+				<p class="description__text">смотрите видео презентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+			</div>
+			<div class="video">
 				<video  class="video__play" src="" poster="" controls preload="metadata" width="" height=""></video>
 			</div>
+		</div>
 			
 	<footer class="page-footer">
 		<div class="page-footer__wrapper">
-			<p class="page-footer__title">#VISITSEDONA</p>
+			<p class="page-footer__title">#visitsedona</p>
 			<p class="page-footer__social">
 				<span class="social-links">
 					<a class="social-link social-link--tw" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
@@ -84,7 +112,7 @@
 				</span>
 			</p>
 			<p class="page-footer__copyright">
-				<a class="copyright" href="" >РАЗРАБОТАНО</a>
+				<a class="copyright" href="" >разработано</a>
 			</p>
 		</div>
 	</footer>
