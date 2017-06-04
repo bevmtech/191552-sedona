@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8">
+		<meta charset="utf-8">
 	<link rel="stylesheet" href="css/form.css">
-	<title>Sedona</title>
+	<title>Sedona_Form</title>
 </head>
 <body>
 	<header class="page-header">
-		<h1 class="page-header__title">Седона, небольшой городок в Аризоне</h1><!-- скрыт! -->
+		<h1 class="page-header__title">Оставьте свой отзыв</h1> <!-- скрыт! -->
 		<nav class="main-nav">
 			<!--<span class="main-nav__toggler"><span></span></span>-->
 			<div class="main-nav__wrapper">
@@ -28,79 +28,96 @@
 			</div>
 		</nav>
 		<div class="page-header__logo">
-			<img src="" width="40px" height="40px" alt="city of sedona">
+			<img src="" width="40px" height="40px" alt="city_of_sedona">
 		</div>
 		<div class="page-header__promo-pict">
-			<img src="" width="100%"  alt="welcome to the gorgeous sedona">
+			<img src="" width="100%"  alt="Заглавная картина">
 		</div>
 	</header>
 	<main class="main-page">
 		<div class="main-page__wrapper">
 			<section class="description">
 				<div class="description__wrapper">
-					<h2 class="description__title">седона-небольшой городок в аризоне, заслуживающий большего!</h2>
-					<p class="description__text">рассмотрим 5 причин, по которым седона круче чем гранд каньон!</p>
+					<h2 class="description__title">оставте свой отзыв</h2>
+					<p class="description__text">помогите нашим отелям стать лучше! оставьте отзыв о них а также о посещенных вами достопримечательностях</p>
 				</div>
 			</section>
-			<section class="reason">
-				<div class="reason__block">
-					<h2 class="reason__title">настоящий городок</h2>
-					<p class="reason__numbers">-№1-</p>
-					<p class="reason__descr">седона не аттракцион для туристов, там течет своя жизнь</p>
-					<div class="reason__pict">
-						<img src="" width="100%"  alt="house">
+			<form action="https://echo.htmlacademy.ru/" method="post" class="review">
+				<div class="review__wrapper">
+					<div class="review__item">
+						<h2 class="review__item-title">представтесь</h2>
+						<label class="input" for="name">
+							<span class="input__descr input__descr--name">имя</span>
+							<input class="input__id input__id--name" type="text" required name="name" id="name"><!--модификатор изменяет ширину поля-->
+						</label>
+						<label class="input" for="last_name">
+							<span class="input__descr input__descr--id">фамилия</span>
+							<input class="input__id" type="text" required name="last_name" id="last_name">
+						</label>
+						<label for="fathers_name" class="input">
+							<span class="input__descr input__descr--id">отчество</span>
+							<input class="input__id" type="text" name="fathers_name" id="fathers_name">
+						</label>
+					</div>
+          <div class="review__item">
+            <h2 class="review__item-title">контактная информация:</h2>
+            <label class="input" for="tel">
+              <span class="input__descr input__descr--contact">контактый телефон*</span>
+              <input class="input__contact input__contact--tel" type="tel" required name="tel" id="tel"
+                     placeholder="введите телефон"><!--модификаторы для логотипа-->
+            </label>
+            <label for="email" class="input">
+              <span class="input__descr input__descr--contact">электронная почта*</span>
+              <input class="input__contact input__contact--email" type="email" required name="email" id="email"
+                     placeholder="введите e-mail">
+            </label>
+          </div>
+          <div class="review__item">
+            <h2 class="review__item-title">ваше общее впечатление:</h2>
+            <label for="good_rating" class="input">
+              <input class="input__radio" type="radio" name="rating" id="good_rating" checked value="good">
+              <span class="input__descr">Скорее положительное</span>
+            </label>
+            <label for="bad_rating" class="input">
+              <input class="input__radio" type="radio" name="rating" value="bad" id="bad_rating">
+              <span class="input__descr">Скорее отрицательное</span>
+            </label>
+            <label for="dont_know" class="input">
+              <input class="input__radio" type="radio" name="rating" value="dont_know" id="dont_know">
+              <span class="input__descr">Затрудняюсь ответить</span>
+            </label>
+          </div> 
+          <div class="review__item">
+            <h2 class="review__item-title">посещенные достопримечательности</h2>
+            <label for="devil_bridge" class="input">
+              <input class="input__checkbox" type="checkbox" name="devil_bridge" id="devil_bridge" checked>
+              <span class="input__descr">Мост Дьявола</span>
+            </label>
+            <label for="slide_park" class="input">
+              <input class="input__checkbox" type="checkbox" name="slide_park" id="slide_park" checked>
+              <span class="input__descr">Слайд-парк</span>
+            </label>
+            <label for="mountain" class="input">
+              <input class="input__checkbox" type="checkbox" name="mountain" id="mountain">
+              <span class="input__descr">Гора колокол</span>
+            </label>
+            <label for="red_rocks" class="input">
+              <input class="input__checkbox" type="checkbox" name="red_rocks" id="red_rocks" checked>
+              <span class="input__descr">Красные скалы</span>
+            </label>
+          </div>
+          <div class="review__item">
+          <h2 class="review__item-title">опишите свои эмоции</h2>
+						<label for="input_textarea" class="input">
+							<textarea class="input_textarea" id="input_textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+						</label>
+					</div>
+					<div class="submit">
+						<input class="btn submit__btn" type="submit" value="Отправить отзыв" name="submit">
 					</div>
 				</div>
-				<div class="feature-list">
-					<div class="feature feature--housing"><!--модификаторы чтобы разместить рисунок-->
-						<h2 class="feature__title">жилье</h2>
-						<p class="feature__descr">рекомендуем пожить в настоящем отеле, все как в кино!</p>
-					</div>
-					<div class="feature feature--souvenirs">
-						<h2 class="feature__title">сувениры</h2>
-						<p class="feature__descr">не только китайского, но и местного производства!</p>
-					</div>
-					<div class="feature feature--food">
-						<h2 class="feature__title">еда</h2>
-						<p class="feature__descr">всегда заказыйвайте бургер, вы не разочаруйтесь!</p>
-					</div>
-				</div>
-				<div class="reason__block">
-					<h2 class="reason__title">там есть мост дьявола</h2>
-					<p class="reason__numbers">-№2-</p>
-					<p class="reason__descr">да, по нему можно пройти! если вы осмелитесь, конечно</p>
-					<div class="reason__pict">
-						<img src="" width="100%"  alt="devil bridge">
-					</div>
-				</div>
-				<div class="reason__block reason__block--others">
-					<h2 class="reason__title">небольшая площадь</h2>
-					<p class="reason__numbers">-№3-</p>
-					<p class="reason__descr">все интересные места находятся очень близко</p>
-				</div>
-				<div class="reason__block reason__block--others">
-					<h2 class="reason__title">красивая дорога</h2>
-					<p class="reason__numbers">-№4-</p>
-					<p class="reason__descr">ехать в седону из лас-вегаса совсем не скучно!</p>
-				</div>
-				<div class="reason__block reason__block--others">
-					<h2 class="reason__title">мало туристов</h2>
-					<p class="reason__numbers">-№5-</p>
-					<p class="reason__descr">большинство едет в гранд каньон и толпится там</p>
-				</div>
-			</section>
-			<section class="description">
-				<div class="description__wrapper">
-					<h1 class="descrition__title">заинтересовались</h1>
-					<p class="description__text">укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостинниц в седоне</p>
-					<a class="btn" href="">найти гостинницы</a>
-				</div>
-			</section>
-			<section class="map">
-				<iframe class="map__google" src="" width="1200" height="350" frameborder="0">
-				</iframe>
-			</section>
-		</div>
+      </form>
+    </div>
 	</main>
 	<footer class="page-footer">
 		<div class="page-footer__wrapper">
@@ -113,7 +130,7 @@
 				</span>
 			</p>
 			<p class="page-footer__copyright">
-				<a class="page-footer__copyright-link" href="">разработано</a>
+				<a class="copyright" href="" >разработано</a>
 			</p>
 		</div>
 	</footer>
