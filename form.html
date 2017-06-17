@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+x <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Sedona_Form</title>
 </head>
 <body>
@@ -13,25 +13,27 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="btn main-nav__item  main-nav__item--active">
-            <a>главная</a>
+            <a href="index.html">главная</a>
           </li>
-          <li class="btn main-nav__item">
+          <li class="main-nav__item">
             <a href="">фото и видео</a>
           </li>
-          <li class="btn main-nav__item">
-            <a href="">форма отзыва</a>
+          <li class="main-nav__item">
+            <a>форма отзыва</a>
           </li>
-          <li class="btn main-nav__item">
+          <li class="main-nav__item">
             <a href="">html academy</a>
           </li>
         </ul>
       </div>
     </nav>
     <div class="page-header__logo">
-      <img src="" width="40px" height="40px" alt="city_of_sedona">
+      <a href="index.html">
+        <img src="img/logo-sedona-mobile.svg" width="40px" height="40px" alt="city of sedona">
+      </a>
     </div>
     <div class="page-header__promo-pict">
-      <img src="" width="100%"  alt="Заглавная картина">
+      <img src="img/bg-back-mobile@1x.jpg" width="320px" min-height="390px" alt="welcome to the gorgeous sedona">
     </div>
   </header>
   <main class="main-page">
@@ -47,7 +49,7 @@
           <div class="review__item">
             <h2 class="review__item-title">представтесь</h2>
             <label class="input" for="name">
-              <span class="input__descr input__descr--name">имя</span>
+              <span class="input__descr input__descr--id">имя</span>
               <input class="input__id input__id--name" type="text" required name="name" id="name"><!--модификатор изменяет ширину поля-->
             </label>
             <label class="input" for="last_name">
@@ -63,51 +65,51 @@
             <h2 class="review__item-title">контактная информация:</h2>
             <label class="input" for="tel">
               <span class="input__descr input__descr--contact">контактый телефон*</span>
-              <input class="input__contact input__contact--tel" type="tel" required name="tel" id="tel" placeholder="введите телефон"><!--модификаторы для логотипа-->
+              <input class="input__contact input__contact--tel" type="tel" required name="tel" id="tel" placeholder="Введите телефон"><!--модификаторы для логотипа-->
             </label>
             <label for="email" class="input">
               <span class="input__descr input__descr--contact">электронная почта*</span>
-              <input class="input__contact input__contact--email" type="email" required name="email" id="email" placeholder="введите e-mail">
+              <input class="input__contact input__contact--email" type="email" required name="email" id="email" placeholder="Введите e-mail">
             </label>
           </div>
           <div class="review__item">
             <h2 class="review__item-title">ваше общее впечатление:</h2>
             <label for="good_rating" class="input">
               <input class="input__radio" type="radio" name="rating" id="good_rating" checked value="good">
-              <span class="input__descr">Скорее положительное</span>
+              <span class="input__descr input__descr--radio">Скорее положительное</span>
             </label>
             <label for="bad_rating" class="input">
               <input class="input__radio" type="radio" name="rating" value="bad" id="bad_rating">
-              <span class="input__descr">Скорее отрицательное</span>
+              <span class="input__descr input__descr--radio">Скорее отрицательное</span>
             </label>
             <label for="dont_know" class="input">
               <input class="input__radio" type="radio" name="rating" value="dont_know" id="dont_know">
-              <span class="input__descr">Затрудняюсь ответить</span>
+              <span class="input__descr input__descr--radio">Затрудняюсь ответить</span>
             </label>
           </div>
           <div class="review__item">
             <h2 class="review__item-title">посещенные достопримечательности</h2>
             <label for="devil_bridge" class="input">
               <input class="input__checkbox" type="checkbox" name="devil_bridge" id="devil_bridge" checked>
-              <span class="input__descr">Мост Дьявола</span>
+              <span class="input__descr input__descr--checkbox">Мост Дьявола</span>
             </label>
             <label for="slide_park" class="input">
               <input class="input__checkbox" type="checkbox" name="slide_park" id="slide_park" checked>
-              <span class="input__descr">Слайд-парк</span>
+              <span class="input__descr input__descr--checkbox">Слайд-парк</span>
             </label>
             <label for="mountain" class="input">
               <input class="input__checkbox" type="checkbox" name="mountain" id="mountain">
-              <span class="input__descr">Гора колокол</span>
+              <span class="input__descr input__descr--checkbox">Гора колокол</span>
             </label>
             <label for="red_rocks" class="input">
               <input class="input__checkbox" type="checkbox" name="red_rocks" id="red_rocks" checked>
-              <span class="input__descr">Красные скалы</span>
+              <span class="input__descr input__descr--checkbox">Красные скалы</span>
             </label>
           </div>
           <div class="review__item">
           <h2 class="review__item-title">опишите свои эмоции</h2>
-            <label for="input_textarea" class="input">
-              <textarea class="input_textarea" id="input_textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+            <label for="input__textarea" class="input">
+              <textarea class="input__textarea" id="input__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
           </div>
           <div class="submit">
@@ -119,17 +121,15 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <p class="page-footer__title">#visitsedona</p>
-      <p class="page-footer__social">
-        <span class="social-links">
-          <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
-          <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-          <a class="social-link social-link--yt" href="https://www.youtube.com/htmlacademy">Мы в Ютубе</a>
-        </span>
-      </p>
-      <p class="page-footer__copyright">
+      <a href="#" class="page-footer__title">#visitsedona</a>
+      <div class="social-links">
+        <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+        <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        <a class="social-link social-link--yt" href="https://www.youtube.com/htmlacademy">Мы в Ютубе</a>
+      </div>
+      <div class="page-footer__copyright">
         <a class="copyright" href="" >разработано</a>
-      </p>
+      </div>
     </div>
   </footer>
 </body>

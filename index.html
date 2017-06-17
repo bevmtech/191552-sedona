@@ -12,16 +12,16 @@
       <!--<span class="main-nav__toggler"><span></span></span>-->
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="btn main-nav__item  main-nav__item--active">
+          <li class="main-nav__item  main-nav__item--active">
             <a>главная</a>
           </li>
-          <li class="btn main-nav__item">
+          <li class="main-nav__item">
             <a href="">фото и видео</a>
           </li>
-          <li class="btn main-nav__item">
+          <li class="main-nav__item">
             <a href="">форма отзыва</a>
           </li>
-          <li class="btn main-nav__item">
+          <li class="main-nav__item">
             <a href="">html academy</a>
           </li>
         </ul>
@@ -35,15 +35,14 @@
     </div>
   </header>
   <main class="main-page">
-    <div class="main-page__wrapper">
       <section class="description">
         <h2 class="description__title">седона-небольшой городок в аризоне, заслуживающий большего!</h2>
         <p class="description__text">рассмотрим 5 причин, по которым седона круче чем гранд каньон!</p>
       </section>
       <section class="reason">
-        <div class="reason__block">
+        <div class="reason__block reason__block--pict">
           <h2 class="reason__title">настоящий городок</h2>
-          <p class="reason__numbers">-№1-</p>
+          <span class="reason__numbers">-№1-</span>
           <p class="reason__descr">седона не аттракцион для туристов, там течет своя жизнь</p>
           <div class="reason__pict">
             <img src="img/photo-city-mobile@1x.jpg" width="320px" min-height="260px" alt="house">
@@ -60,12 +59,12 @@
           </div>
           <div class="feature__item feature__item--food">
             <h2 class="feature__title">еда</h2>
-            <p class="feature__descr">всегда заказыйвайте бургер, вы не разочаруйтесь!</p>
+            <p class="feature_/_descr">всегда заказыйвайте бургер, вы не разочаруйтесь!</p>
           </div>
         </div>
-        <div class="reason__block">
+        <div class="reason__block reason__block--pict">
           <h2 class="reason__title">там есть мост дьявола</h2>
-          <p class="reason__numbers">-№2-</p>
+          <span class="reason__numbers">-№2-</span>
           <p class="reason__descr">да, по нему можно пройти! если вы осмелитесь, конечно</p>
           <div class="reason__pict">
             <img src="img/photo-4-mobile@1x.jpg" width="320px" min-height="260px" alt="devil bridge">
@@ -73,44 +72,43 @@
         </div>
         <div class="reason__block reason__block--others">
           <h2 class="reason__title">небольшая площадь</h2>
-          <p class="reason__numbers">-№3-</p>
+          <span class="reason__numbers">-№3-</span>
           <p class="reason__descr">все интересные места находятся очень близко</p>
         </div>
         <div class="reason__block reason__block--others">
           <h2 class="reason__title">красивая дорога</h2>
-          <p class="reason__numbers">-№4-</p>
+          <span class="reason__numbers">-№4-</span>
           <p class="reason__descr">ехать в седону из лас-вегаса совсем не скучно!</p>
         </div>
         <div class="reason__block reason__block--others">
           <h2 class="reason__title">мало туристов</h2>
-          <p class="reason__numbers">-№5-</p>
+          <span class="reason__numbers">-№5-</span>
           <p class="reason__descr">большинство едет в гранд каньон и толпится там</p>
         </div>
       </section>
-      <section class="description">
-        <h1 class="descrition__title">заинтересовались</h1>
-        <p class="description__text">укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостинниц в седоне</p>
-        <a class="btn description__btn" href="">найти гостинницы</a>
+      <section class="search">
+        <div class="search__wrapper">
+          <h2 class="search__title">заинтересовались</h2>
+          <p class="search__descr">укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостинниц в седоне</p>
+          <a class="btn search__btn" href="">найти гостинницы</a>
+        </div>
+        <div class="search__map">
+          <iframe class="search__map-canvas" src="" width="" height="" frameborder="0">
+          </iframe>
+        </div>
       </section>
-      <section class="map">
-        <iframe class="map__google" src="" width="1200" height="350" frameborder="0">
-        </iframe>
-      </section>
-      </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <p class="page-footer__title">#visitsedona</p>
-      <p class="page-footer__social">
-        <span class="social-links">
-          <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
-          <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-          <a class="social-link social-link--yt" href="https://www.youtube.com/htmlacademy">Мы в Ютубе</a>
-        </span>
-      </p>
-      <p class="page-footer__copyright">
+      <a href="#" class="page-footer__title">#visitsedona</a>
+      <div class="social-link">
+        <a class="social-link__item social-link__item--tw" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+        <a class="social-link__item social-link__item--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        <a class="social-link__item social-link__item--yt" href="https://www.youtube.com/htmlacademy">Мы в Ютубе</a>
+      </div>
+      <div class="page-footer__copyright">
         <a class="page-footer__copyright-link" href="">разработано</a>
-      </p>
+      </div>
     </div>
   </footer>
 </body>
